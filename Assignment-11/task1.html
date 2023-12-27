@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="describtion" content="this nour store">
+    <script>
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: #f2f2f4;
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 50px auto;
+            padding: 20px;
+            transition: margin-top .5s;
+        }
+
+        .child2 {
+            width: 400px;
+            background-color: #dededc;
+            padding: 20px;
+            margin: auto;
+            transition: margin-top 0.5s 0.5s;
+            margin-top: 10px;
+        }
+
+        .parent:hover .child2 {
+            margin-top: 30px;
+        }
+
+        .parent:hover {
+            margin-top: 25px;
+        }
+    </style>
+    <title>css</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1"> will go up hover in half second</div>
+        <div class="child2">will go down after half second</div>
+    </div>
+</body>
+
+</html>

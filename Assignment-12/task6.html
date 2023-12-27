@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="describtion" content="##############">
+    <style>
+        :root {
+            --mainpadding: 10px;
+            --mainbackground-color: #dddddd;
+            --mainmargin: 20px;
+            --maintext-transform: capitalize;
+        }
+
+        * {
+            box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+        }
+
+        body {
+            margin: auto 70px;
+            padding: 0px 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #eeeeee;
+            text-transform: var(--maintext-transform);
+        }
+
+        header {
+            width: 950px;
+            background-color: var(--mainbackground-color);
+            text-transform: var(--maintext-transform);
+            padding: var(--mainpadding);
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .logo {
+            background-color: #dddddd;
+            height: 50px;
+            margin-left: -125px;
+            width: 100px;
+            line-height: 50px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+
+        .contaniar {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        section {
+            width: 55%;
+            height: 400px;
+            background-color: var(--mainbackground-color);
+            margin-left: -95px;
+            display: flex;
+            padding: var(--mainpadding);
+        }
+
+        aside {
+            width: 28%;
+            background-color: var(--mainbackground-color);
+            height: 400px;
+            margin-left: 24px;
+            text-align: left;
+            padding: var(--mainpadding);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--mainbackground-color);
+            width: 85%;
+            height: 50px;
+            padding: var(--mainpadding);
+            margin-left: -97px;
+            align-items: center;
+        }
+    </style>
+    <title>flex</title>
+</head>
+
+<body>
+    <header>
+        <p class="logo">logo</p>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>services</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contaniar">
+        <section>content</section>
+        <aside>sidebar</aside>
+    </main>
+    <footer>
+        <p>copyright 2021</p>
+        <p>designed by elzero</p>
+    </footer>
+</body>
+
+</html>

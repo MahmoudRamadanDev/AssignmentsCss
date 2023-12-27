@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <style>
+    :root {
+      --mainbackground-color: #009688;
+      --maincolor: white;
+    }
+
+    * {
+      box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+    }
+
+    .parent {
+      width: 600px;
+      height: 300px;
+      margin: 50px auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      background-color: #eee;
+      padding: 10px;
+      color: var(--maincolor);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .parent div {
+      background-color: var(--mainbackground-color);
+      height: calc(100% / 3);
+      line-height: 6;
+      text-align: center;
+    }
+
+    .one,
+    .three {
+      align-self: flex-end;
+      width: 30px;
+    }
+
+    .two {
+      width: 65%;
+    }
+  </style>
+  <title>flex box</title>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="describtion" content="this our store">
+    <title>css</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .parent {
+            width: 550px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .child1,
+        .child3 {
+            background-color: #03a9f4;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .child2,
+        .child4 {
+            background-color: #dddddd;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            margin: 20px auto;
+        }
+
+        .plan1 {
+            float: left;
+        }
+
+        .plan2 {
+            float: right;
+        }
+
+        .plan1,
+        .plan2 {
+            background-color: #eeeeee;
+            width: calc((100% - 50px) / 2);
+            position: relative;
+        }
+
+        .plan1::after {
+            content: "";
+            position: absolute;
+            right: -25px;
+            top: 0;
+            height: 300px;
+            border-left: 1px solid #03a9f4;
+        }
+
+        .plan2::before {
+            content: "or";
+            position: absolute;
+            left: -40px;
+            background-color: #03a9f4;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            color: white;
+            line-height: 30px;
+            font-size: 17px;
+            top: calc(50% - 15px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="plan1">
+            <div class="child1">Basic</div>
+            <div class="child2">Free</div>
+        </div>
+        <div class="plan2">
+            <div class="child3">Pro</div>
+            <div class="child4">$30</div>
+        </div>
+    </div>
+</body>
+
+</html>

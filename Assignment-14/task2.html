@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <style>
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+ .layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "head head head head head head head head head head " 
+    "sec sec sec sec sec sec sec side side side"
+     "foot foot foot foot foot foot foot foot foot foot ";
+    color: white;
+    padding: 10px;
+  } 
+  header {
+      grid-area: head;
+      background-color: #03a9f4;
+  }
+  section {
+      grid-area: sec;
+      background-color: #ff5722;
+  }
+  aside {
+      grid-area: side;
+      background-color: #607d8b;
+  }
+  footer {
+      grid-area: foot;
+      background-color:#009688 ;
+  }
+  header,
+  section,
+  footer,
+  aside {
+      padding: 20px;
+      font-family: sans-serif;
+  }
+   </style>
+    <title>Grid</title>
+</head>
+<body>
+    <div class="layout">
+        <header>Header</header>
+        <section>Section</section>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+      </div>
+</body>
+</html>

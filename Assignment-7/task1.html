@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css</title>
+  <style>
+  .parent {
+    width: 800px;
+    background-color: #eeeeee;
+    margin: 30px auto;
+    overflow: hidden;
+  }
+  div p {
+background-color: #dddddd;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 15px 0px;
+    text-align: center;
+    float: left;
+    margin-left: 15px;
+    margin-top: 0px;
+  }
+  .pro_1 {
+    width: calc((100% - 30px) / 1);
+    margin-bottom: 0px;
+  }
+  .pro_1,
+  .pro_2 {
+    margin-top: 15px;
+  }
+  .pro_2 {
+    width: calc((100% - 60px) / 3);
+  } 
+  .pro_3 {
+    width: calc((100% - 45px) / 2);
+  }
+.pro_4 {
+width: calc((100% - 75px) / 4);
+}
+  </style>
+</head>
+<body>
+  <div class="parent">
+      <p class="pro_1">Full Width</p>
+      <p class="pro_2">1/3</p>
+      <p class="pro_2">1/3</p>
+      <p class="pro_2">1/3</p>
+      <!-- <div class="clear_1"></div> -->
+        <p class="pro_3">1/2</p>
+      <p class="pro_3">1/2</p>
+      <p class="pro_4">1/4</p>
+      <p class="pro_4">1/4</p>
+      <p class="pro_4">1/4</p>
+      <p class="pro_4">1/4</p>
+      <div class="clear_1"></div>
+      <div class="clear_2"></div>
+</div>
+</body>
+</html>

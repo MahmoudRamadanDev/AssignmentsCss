@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="describtion" content="the before and after">
+    <title>css</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            padding: 10px;
+            margin: 35px;
+            display: inline-block;
+            border-radius: 50%;
+            box-shadow: 5px 5px 0px 0px #2196f3, -5px -5px 0px 0px #e91e63;
+            -moz-box-shadow: 5px 5px 0px 0px #2196f3, -5px -5px 0px 0px #e91e63;
+            -o-box-shadow: 5px 5px 0px 0px #2196f3, -5px -5px 0px 0px #e91e63;
+            -webkit-box-shadow: 5px 5px 0px 0px #2196f3, -5px -5px 0px 0px #e91e63;
+            -ms-box-shadow: 5px 5px 0px 0px #2196f3, -5px -5px 0px 0px #e91e63;
+            border: 3px solid black;
+            counter-increment: members-counter;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        div::before {
+            content: counter(members-counter);
+            color: white;
+            position: absolute;
+            left: 35px;
+            top: -13px;
+            background-color: black;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+        }
+
+        div::after {
+            content: "Element";
+            line-height: 4;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+</body>
+
+</html>
